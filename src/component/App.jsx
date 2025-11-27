@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Footer from "./Footer";
 
 function App() {
   let [time, setTime] = useState(new Date().toLocaleTimeString("en-GB"));
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="container">
       <h1>{time}</h1>
-      <button onClick={reload}>Get Time</button>
+      <Footer/>
     </div>
   );
 }
@@ -20,3 +21,4 @@ function App() {
 export default App;
 
 // The "en-GB" is to turn the clock into a 24 hour clock
+
